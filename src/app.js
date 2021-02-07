@@ -1,3 +1,4 @@
+const bodyParser = require('body-parser');
 const express = require ('express');
 const mongoose = require ('mongoose');
 require('dotenv').config();
@@ -50,5 +51,11 @@ const Mentions = require('./models/mentions');
 // Load Routes
 const indexRoutes = require('./routes/index-routes');
 app.use('/', indexRoutes);
+
+
+const mentionsRoutes = require('./routes/mentions-routes');
+app.use(bodyParser.json());
+app.use('/mentions', mentionsRoutes);
+
 
 module.exports = app;
