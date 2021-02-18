@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended: true}));
 mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useFindAndModify: true,
+  useFindAndModify: false,
   useCreateIndex: true
 });
 
