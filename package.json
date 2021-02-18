@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node node_modules/nodemon/bin/nodemon bin/server"
-  
   },
   "repository": {
     "type": "git",
@@ -21,7 +20,10 @@
   "homepage": "https://github.com/kel-lucas/Mentions#readme",
   "dependencies": {
     "debug": "^4.3.1",
-    "express": "^4.17.1"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.2",
+    "mongoose": "^5.11.15"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
